@@ -2,6 +2,7 @@
 
 const config = require('../scripts/config')
 const store = require('../scripts/store')
+const index = require('../scripts/index.js')
 
 const signUp = (data) => {
   return $.ajax({

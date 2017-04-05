@@ -4,4 +4,23 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 .square {
   border: 1px solid #000;
   height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+img {
+  height: 99px;
+  width: 99px;
+}
+
+.newgame {
+  margin: 20px auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container{
+  text-align: center;
 }
