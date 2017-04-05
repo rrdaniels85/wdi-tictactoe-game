@@ -7,7 +7,8 @@ $(() => {
   setAPIOrigin(location, config)
 })
 
-let squaresInPlay=['x', '', '', '', '', '', '', '', '']
+// game board array to reflect which squares have been played and by who
+let squaresInPlay=['', '', '', '', '', '', '', '', '']
 
 let currentTurn = ''
 
