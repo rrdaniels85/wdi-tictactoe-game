@@ -36,5 +36,41 @@
         </div>
       </div>
       <p>May the force be with you</p>
-    </body>
+
+    <form id="sign-up">
+      <fieldset>
+      <legend>Sign up!</legend>
+      <input name="credentials[email]" type="text" id="sign-up-emai" placeholder="Email">
+      <input name="credentials[password]" type="password" id="sign-up-password" placeholder="Password">
+      <input name="credentials[password_confirmation]" type="password" id="sign-up-password-confirmation" placeholder="Confirm Password">
+      <input type="submit" name="submit" value="Sign up!">
+    </fieldset>
+    </form>
+
+  <form id="sign-in">
+  <fieldset>
+  <legend>Sign in!</legend>
+  <input name="credentials[email]" type="text" id="sign-in-email" placeholder="Email">
+  <input name="credentials[password]" type="password" id="sign-in-password" placeholder="Password">
+  <input type="submit" name="submit" value="Sign in!">
+</fieldset>
+</form>
+
+<form id="sign-out">
+  <fieldset>
+    <legend>Sign out!</legend>
+    <input type="submit" name="submit" value="Sign out!">
+  </fieldset>
+</form>
+
+<form id="change-password">
+  <fieldset>
+    <legend>Change Password!</legend>
+    <input type='password' name='passwords[old]' id ='old-password' placeholder='Old Password'>
+    <input type='password' name='passwords[new]' id ='new-password' placeholder='New Password'>
+    <input type="submit" name="submit" value="Change Password">
+  </fieldset>
+</form>
+
+  </body>
 </html>
