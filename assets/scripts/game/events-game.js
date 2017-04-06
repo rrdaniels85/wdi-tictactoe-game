@@ -49,6 +49,20 @@ const clickSquare = function (event) {
         game.makeMove(currentTurn, squareId, cells)
         // call checkWinningCombos to see if game is over
         over = game.checkWinningCombos(cells)
+        // update game with server
+        const data = {
+          'game': {
+            'cell': {
+              'index': +squareId,
+              'value': 'x'
+            },
+            'over': over
+          }
+}
+
+        api.updateGame(data)
+          .then(ui.updateGameSuccess)
+          .catch(ui.updateGameFailure)
         // update current turn to the next player
         currentTurn = 'o'
         // if player o made selection
@@ -61,6 +75,19 @@ const clickSquare = function (event) {
         game.makeMove(currentTurn, squareId, cells, over)
         // call checkWinningCombos to see if game is over
         over = game.checkWinningCombos(cells)
+        // send updated data to server for game movew
+        const data = {
+          'game': {
+            'cell': {
+              'index': +squareId,
+              'value': 'o'
+            },
+            'over': over
+          }
+        }
+        api.updateGame(data)
+          .then(ui.updateGameSuccess)
+          .catch(ui.updateGameFailure)
         // update current turn to the next player
         currentTurn = 'x'
       }
