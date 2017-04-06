@@ -12,9 +12,9 @@ const signUpFailure = (error) => {
   console.error(error)
 }
 
-const signInSuccess = (data) => {
-  console.log('signIn sucess ran. data is: ', data)
-  store.user = data.user
+const signInSuccess = (input) => {
+  console.log('signIn sucess ran. data is: ', input)
+  store.user = input.user
    $('#signinmodal').modal('toggle')
   // reveal the hidden elements on the board
   $('.shownbuttons').removeClass('hidingbuttons')

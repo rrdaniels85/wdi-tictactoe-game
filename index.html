@@ -13,14 +13,16 @@
     </head>
     <body class="container-fluid">
       <h1>Star Wars Tic Tac Toe</h1>
-      <button type="button" class="newgame shownbuttons hidingbuttons">Start New Game</button>
-      <button type="button" class="totalWins shownbuttons hidingbuttons">Game Stats</button>
-  <!-- Modal button -->
+      <button type="button" class="newgame shownbuttons hidingbuttons">Begin New Game</button>
+      <button type="button" class="totalwins shownbuttons hidingbuttons" id="getstats">Game Statistics</button>
+
+
+  <!-- SIGN IN modal button -->
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signinmodal">
-        Sign In/Sign Up
+        Sign In
       </button>
 
-      <!-- Modal -->
+      <!-- SIGN IN Modal -->
       <div class="modal fade" id="signinmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -43,7 +45,8 @@
           </div>
         </div>
       </div>
-  <!-- game board -->
+
+  <!-- GAME BOARD -->
       <div class="container shownboard hidingboard">
         <!-- Row 1 of game board -->
         <div class="row">

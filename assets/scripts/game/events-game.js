@@ -29,6 +29,8 @@ const newBoard = function (event) {
   api.createGame(data)
     .then(ui.createGameSuccess)
     .catch(ui.createGameFailure)
+// change text in reset button after first clickSquare
+  $('.newgame').text('Reset Game')
 }
 // function to track game play, check for wins and log results
 const clickSquare = function (event) {
@@ -109,7 +111,7 @@ const getStats = function (event) {
 const gameHandlers = () => {
   $('.square').on('click', clickSquare)
   $('.newgame').on('click', newBoard)
-  $('.gamestats').on('click', getStats)
+  $('#getstats').on('click', getStats)
 }
 
 module.exports = {
