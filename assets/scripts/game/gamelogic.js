@@ -57,7 +57,50 @@ const makeMove = function (playerId, squareId, newArray, gamestatus) {
   newArray[squareId] = playerId
 }
 
+const totalWins = function (gamearray) {
+  // check for winning combo 1 for x
+  if ((gamearray[0] === gamearray[1]) && (gamearray[1] === gamearray[2]) && (gamearray[2] === 'x')) {
+    return true
+    // check for winning combo 2 for x
+  } else if ((gamearray[3] === gamearray[4]) && (gamearray[4] === gamearray[5]) && (gamearray[5] === 'x')) {
+    return true
+    // check for winning combo 3 for x
+  } else if ((gamearray[6] === gamearray[7]) && (gamearray[7] === gamearray[8]) && (gamearray[8] === 'x')) {
+    return true
+    // check for winning combo 4
+  } else if ((gamearray[0] === gamearray[3]) && (gamearray[3] === gamearray[6]) && (gamearray[6] === 'x')) {
+    return true
+    // check for winning combo 5
+  } else if ((gamearray[1] === gamearray[4]) && (gamearray[4] === gamearray[7]) && (gamearray[7] === 'x')) {
+    return true
+    // check for winning combo 6
+  } else if ((gamearray[2] === gamearray[5]) && (gamearray[5] === gamearray[8]) && (gamearray[8] === 'x')) {
+    return true
+    // check for winning combo 7
+  } else if ((gamearray[0] === gamearray[4]) && (gamearray[4] === gamearray[8]) && (gamearray[8] === 'x')) {
+    return true
+    // check for wining combo 8
+  } else if ((gamearray[2] === gamearray[4]) && (gamearray[4] === gamearray[6]) && (gamearray[6] === 'x')) {
+    return true
+    // if no win by x - then return false
+  } else {
+    return false
+  }
+}
+
+const winCounter = function (data) {
+  for (let i = 0; i < data.games.length; i++) {
+     let wins = 0
+     if (totalWins(data.games[i].cells)) {
+       wins ++
+     }
+     return wins
+ }
+}
+
 module.exports = {
   makeMove,
-  checkWinningCombos
+  checkWinningCombos,
+  totalWins,
+  winCounter
 }

@@ -1,6 +1,7 @@
 'use strict'
 
 const store = require('../store')
+const game = require('./gamelogic')
 
 const createGameSuccess = (data) => {
   console.log(data)
@@ -25,7 +26,9 @@ const updateGameFailure = (error) => {
 }
 
 const getGamesSuccess = (data) => {
-  console.log(data.games)
+  console.log(data)
+  let gamesWon = game.winCounter(data)
+  $('.totalWins').text('You have won ' + gamesWon + ' games! You jedi master!')
 }
 
 const getGamesFailure = (error) => {

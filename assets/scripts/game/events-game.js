@@ -5,6 +5,7 @@
 const api = require('./api-game')
 const ui = require('./ui-game')
 const game = require('./gamelogic')
+const store = require('../store')
 
 let currentTurn = 'x'
 let cells = ['', '', '', '', '', '', '', '', '']
@@ -29,7 +30,6 @@ const newBoard = function (event) {
     .then(ui.createGameSuccess)
     .catch(ui.createGameFailure)
 }
-
 // function to track game play, check for wins and log results
 const clickSquare = function (event) {
   // prevent page from refreshing
@@ -98,7 +98,7 @@ const clickSquare = function (event) {
   }
 }
 
-const getStats = function () {
+const getStats = function (event) {
   event.preventDefault()
   console.log('you clicked this button for stats')
   api.index()
