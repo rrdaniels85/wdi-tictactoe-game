@@ -5,7 +5,10 @@ const events = require('../scripts/game/events-game')
 
 const signUpSuccess = (data) => {
   console.log(data)
+  console.log('you signed up buddy')
   // reveal the hidden elements of the board
+  $('#signupmodal').modal('toggle')
+  $('#signinmodal').modal('toggle')
 }
 
 const signUpFailure = (error) => {

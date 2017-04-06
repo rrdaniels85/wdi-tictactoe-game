@@ -16,6 +16,35 @@
       <button type="button" class="newgame shownbuttons hidingbuttons">Begin New Game</button>
       <button type="button" class="totalwins shownbuttons hidingbuttons" id="getstats">Game Statistics</button>
 
+      <!-- SIGN UP modal button -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupmodal">
+            Sign Up
+          </button>
+
+          <!-- SIGN UP Modal -->
+          <div class="modal fade" id="signupmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">May the force be with you padawan...</h5>
+                </div>
+                <div class="modal-body">
+                  <form id="sign-up">
+                  <fieldset>
+                  <legend>Enroll in the Jedi Academy</legend>
+                  <input name="credentials[email]" type="text" id="sign-up-emai" placeholder="Email">
+                  <input name="credentials[password]" type="password" id="sign-up-password" placeholder="Password">
+                  <input name="credentials[password_confirmation]" type="password" id="sign-up-password-confirmation" placeholder="Confirm Password">
+                  <input type="submit" name="submit" value="Sign up!">
+                </fieldset>
+                </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
   <!-- SIGN IN modal button -->
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signinmodal">
@@ -79,7 +108,7 @@
       <p class="results"></p>
       <p class="totalWins"></p>
 
-    <form id="sign-up">
+    <!-- <form id="sign-up">
       <fieldset>
       <legend>Join the Jedi Training Academy - Sign up!</legend>
       <input name="credentials[email]" type="text" id="sign-up-emai" placeholder="Email">
@@ -87,7 +116,7 @@
       <input name="credentials[password_confirmation]" type="password" id="sign-up-password-confirmation" placeholder="Confirm Password">
       <input type="submit" name="submit" value="Sign up!">
     </fieldset>
-    </form>
+    </form> -->
 
   <!-- <form id="sign-in">
   <fieldset>
