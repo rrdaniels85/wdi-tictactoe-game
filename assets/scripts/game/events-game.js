@@ -2,8 +2,8 @@
 
 //const getFormFields = require(`../../lib/get-form-fields`)
 
-//const api = require('./api')
-//const ui = require('./ui')
+const api = require('./api-game')
+const ui = require('./ui-game')
 const game = require('./gamelogic')
 
 let currentTurn = 'x'
@@ -22,6 +22,10 @@ const newBoard = function (event) {
 // clear the squares on the board
   $('.square').text('')
   $('.results').text('')
+  const data = '{}'
+  api.createGame(data)
+    .then(ui.createGameSuccess)
+    .catch(ui.createGameFailure)
 }
 
 // function to track game play, check for wins and log results
