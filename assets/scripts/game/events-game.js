@@ -21,6 +21,7 @@ const newBoard = function (event) {
   over = false
 // clear the squares on the board
   $('.square').text('')
+  $('.results').text('')
 }
 
 // function to track game play, check for wins and log results
