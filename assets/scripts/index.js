@@ -10,8 +10,10 @@
  require('./example')
 
  const authEvents = require('../../assets/auth/events.js')
+ const gameEvents = require('./game/events-game.js')
 
 // On document ready
  $(() => {
    authEvents.addHandlers()
+   gameEvents.gameHandlers()
  })
