@@ -22,7 +22,9 @@ const newBoard = function (event) {
 // clear the squares on the board
   $('.square').text('')
   $('.results').text('')
+// create object that server is expecting
   const data = '{}'
+// contact api to create a game
   api.createGame(data)
     .then(ui.createGameSuccess)
     .catch(ui.createGameFailure)
@@ -49,7 +51,7 @@ const clickSquare = function (event) {
         game.makeMove(currentTurn, squareId, cells)
         // call checkWinningCombos to see if game is over
         over = game.checkWinningCombos(cells)
-        // update game with server
+        // create data structure expected by api
         const data = {
           'game': {
             'cell': {
@@ -58,8 +60,8 @@ const clickSquare = function (event) {
             },
             'over': over
           }
-}
-
+        }
+        // send update request to api for game
         api.updateGame(data)
           .then(ui.updateGameSuccess)
           .catch(ui.updateGameFailure)
@@ -75,7 +77,7 @@ const clickSquare = function (event) {
         game.makeMove(currentTurn, squareId, cells, over)
         // call checkWinningCombos to see if game is over
         over = game.checkWinningCombos(cells)
-        // send updated data to server for game movew
+        // create data structure expected by api
         const data = {
           'game': {
             'cell': {
@@ -85,6 +87,7 @@ const clickSquare = function (event) {
             'over': over
           }
         }
+        // send update request to api for game
         api.updateGame(data)
           .then(ui.updateGameSuccess)
           .catch(ui.updateGameFailure)
@@ -95,15 +98,25 @@ const clickSquare = function (event) {
   }
 }
 
+const getStats = function () {
+  event.preventDefault()
+  console.log('you clicked this button for stats')
+  api.index()
+    .then(ui.getGamesSuccess)
+    .catch(ui.getGamesFailure)
+}
+
 const gameHandlers = () => {
   $('.square').on('click', clickSquare)
   $('.newgame').on('click', newBoard)
+  $('.gamestats').on('click', getStats)
 }
 
 module.exports = {
   gameHandlers,
   newBoard,
   clickSquare,
+  getStats,
   cells,
   over
 }
