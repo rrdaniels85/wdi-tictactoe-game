@@ -8,6 +8,7 @@ const createGameSuccess = (data) => {
   console.log('created a new game, woot!')
   console.log(store.game)
   store.game = data.game
+  $('.shownboard').removeClass('hidingboard')
 }
 
 const createGameFailure = (error) => {
