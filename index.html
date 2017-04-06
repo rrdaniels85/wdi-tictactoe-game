@@ -15,6 +15,35 @@
       <h1>Star Wars Tic Tac Toe</h1>
       <button type="button" class="newgame shownbuttons hidingbuttons">Start New Game</button>
       <button type="button" class="totalWins shownbuttons hidingbuttons">Game Stats</button>
+  <!-- Modal button -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signinmodal">
+        Sign In/Sign Up
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="signinmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Continue Your Jedi Training!</h5>
+            </div>
+            <div class="modal-body">
+              <form id="sign-in">
+              <fieldset>
+              <legend>Continue Your Training - Sign in!</legend>
+              <input name="credentials[email]" type="text" id="sign-in-email" placeholder="Email">
+              <input name="credentials[password]" type="password" id="sign-in-password" placeholder="Password">
+              <input type="submit" name="submit" value="Sign in!">
+            </fieldset>
+            </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- game board -->
       <div class="container shownboard hidingboard">
         <!-- Row 1 of game board -->
         <div class="row">
@@ -57,14 +86,14 @@
     </fieldset>
     </form>
 
-  <form id="sign-in">
+  <!-- <form id="sign-in">
   <fieldset>
   <legend>Continue Your Training - Sign in!</legend>
   <input name="credentials[email]" type="text" id="sign-in-email" placeholder="Email">
   <input name="credentials[password]" type="password" id="sign-in-password" placeholder="Password">
   <input type="submit" name="submit" value="Sign in!">
-</fieldset>
-</form>
+</fieldset> -->
+<!-- </form> -->
 
 <form id="sign-out">
   <fieldset>

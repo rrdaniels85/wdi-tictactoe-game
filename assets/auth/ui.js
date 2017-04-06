@@ -6,7 +6,6 @@ const events = require('../scripts/game/events-game')
 const signUpSuccess = (data) => {
   console.log(data)
   // reveal the hidden elements of the board
-  $('.shownbuttons').removeClass('hidingbuttons')
 }
 
 const signUpFailure = (error) => {
@@ -16,6 +15,7 @@ const signUpFailure = (error) => {
 const signInSuccess = (data) => {
   console.log('signIn sucess ran. data is: ', data)
   store.user = data.user
+   $('#signinmodal').modal('toggle')
   // reveal the hidden elements on the board
   $('.shownbuttons').removeClass('hidingbuttons')
 }
