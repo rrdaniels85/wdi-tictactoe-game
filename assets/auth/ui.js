@@ -44,7 +44,8 @@ const signOutFailure = (error) => {
 
 const changePasswordSuccess = () => {
   console.log('you changed your password!')
-  store.user = null
+  $('#newpasswordmodal').modal('toggle')
+  // store.user = null
 }
 
 const changePasswordFailure = (error) => {
