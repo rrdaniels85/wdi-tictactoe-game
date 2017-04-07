@@ -24,6 +24,7 @@ const signInSuccess = (input) => {
   // reveal the hidden elements on the board
   $('.loginbuttons').removeClass('hidingbuttons')
   $('.initialbuttons').addClass('hidingbuttons')
+  $('.results').text('')
   $('.newgame').text('Begin New Game')
 }
 
