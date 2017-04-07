@@ -23,7 +23,6 @@ const onSignIn = function (event) {
 }
 
 const onSignOut = function (event) {
-  console.log('yo')
   event.preventDefault()
   console.log('sign out ran')
   api.signOut()
