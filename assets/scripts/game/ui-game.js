@@ -8,6 +8,7 @@ const createGameSuccess = (data) => {
   console.log('created a new game, woot!')
   console.log(store.game)
   store.game = data.game
+  $('.newgame').text('Reset Game')
   $('.shownboard').removeClass('hidingboard')
 }
 
@@ -30,7 +31,7 @@ const getGamesSuccess = (data) => {
   console.log(data)
   let gamesWon = game.winCounter(data)
   console.log(gamesWon)
-  $('.gamewins').text('You have won ' + gamesWon + ' game(s)! You jedi master!')
+  $('.gamewins').text('You have won ' + gamesWon + ' game(s)!')
 }
 
 const getGamesFailure = (error) => {

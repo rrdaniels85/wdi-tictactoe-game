@@ -44,7 +44,7 @@ const checkWinningCombos = function (gamearray) {
     return true
     // if all squares filled in with no win combo - notify it's a draw
   } else if (gamearray.indexOf('') === -1) {
-    $('.results').text('It is a draw, bummer!')
+    $('.results').text('It is a draw, no winner!')
     return true
   // if none of the above - continue playing
   } else {
