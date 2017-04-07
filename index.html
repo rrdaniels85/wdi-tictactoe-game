@@ -21,11 +21,11 @@
       <button type="button" class="newgame shownbuttons hidingbuttons">Begin New Game</button>
 
     <!-- SIGN OUT button -->
-      <form class="shownbuttons hidingbuttons" form id="sign-out">
+      <!-- <form class="shownbuttons hidingbuttons" form id="sign-out">
         <fieldset>
           <input type="submit" name="submit" value="Sign out!" class= "shownbuttons and hidingbuttons">
         </fieldset>
-      </form>
+      </form> -->
 
       <!-- SIGN UP modal button -->
           <button type="button modalbutton" class="btn btn-primary" data-toggle="modal" data-target="#signupmodal">
@@ -106,6 +106,32 @@
                 <input type="submit" name="submit" value="Change Password">
             </fieldset>
             </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SIGN OUT modal button -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signoutmodal">
+            Sign Out
+          </button>
+
+      <!-- SIGN OUT Modal -->
+      <div class="modal fade" id="signoutmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Are you sure you want to leave?</h5>
+            </div>
+            <div class="modal-body">
+              <form id="sign-out">
+                <fieldset>
+                  <input type="submit" name="submit" value="Sign out!">
+                </fieldset>
+              </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
