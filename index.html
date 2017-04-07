@@ -186,15 +186,39 @@
         </div>
       </div>
 
-<!-- GAME STATS BUTTON-->
-    <div class="text-center">
-        <button type="button" class="loginbuttons hidingbuttons" id="getstats">Get Current Game Statistics</button>
+      <!-- GAME STATS modal button -->
+        <div class="text-center">
+            <button type="button" class="btn btn-primary loginbuttons hidingbuttons" id="getstats" data-toggle="modal" data-target="#gamestatsmodal">
+              Get Current Game Statistics
+            </button>
+          </div>
+
+      <!-- GAME STATS Modal -->
+      <div class="modal fade" id="gamestatsmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Total Wins</h5>
+            </div>
+            <div class="modal-body gamewins">
+                <!-- Win message goes here -->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
       </div>
 
+<!-- GAME STATS BUTTON-->
+    <!-- <div class="text-center">
+        <button type="button" class="loginbuttons hidingbuttons" id="getstats">Get Current Game Statistics</button>
+      </div> -->
+
       <!-- DISPLAY WINS-->
-      <div class="text-center">
+      <!-- <div class="text-center">
       <p class="gamewins"></p>
-      </div>
+      </div> -->
 
       <img src="http://i.imgur.com/yYudZmg.jpg" alt="yoda ready for action">
       <p class="force">May the force be with you</p>
