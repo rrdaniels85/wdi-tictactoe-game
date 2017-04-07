@@ -35,6 +35,8 @@ img {
   background-color: $gray;
   color: #000;
   font-weight: bold;
+  border-radius: 15px;
+  margin: 5px;
 }
 
 .modal-title {
@@ -66,11 +68,16 @@ button {
   display: none;
 }
 
+.resetgamediv{
+  position: absolute;
+}
+
 .initialbuttons {
-  margin: 20px;
+  margin: 5px;
   background-color: $gray;
   color: #000;
   font-weight: bold;
+  border-radius: 15px;
 }
 
 .hidingbuttons {
@@ -85,7 +92,6 @@ button {
 
 .results {
   font-size: 20px;
-  text-align: center;
 }
 
 .shownbuttons {

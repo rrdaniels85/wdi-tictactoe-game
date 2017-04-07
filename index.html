@@ -18,7 +18,6 @@
       <img class="starwarslogo" src="./assets/styles/images/starwarslogo.jpg" alt="Star Wars Logo">
       <h1 class="title">Tic Tac Toe</h1>
     </header>
-      <button type="button" class="newgame loginbuttons hidingbuttons">Begin New Game</button>
 
     <!-- SIGN OUT button -->
       <!-- <form class="loginbuttons hidingbuttons" form id="sign-out">
@@ -147,6 +146,12 @@
         </div>
       </div>
 
+  <!-- NEW GAME BUTTON -->
+      <div class="text-center">
+        <button type="button" class="newgame loginbuttons hidingbuttons">Begin New Game</button>
+      </div>
+
+
   <!-- GAME BOARD -->
       <div class="container shownboard hidingboard">
         <!-- Row 1 of game board -->
@@ -177,11 +182,20 @@
         </div>
       </div>
 
-        <button type="button" class="loginbuttons hidingbuttons" id="getstats">Game Statistics</button>
+<!-- GAME STATS BUTTON-->
+    <div class="text-center">
+        <button type="button" class="loginbuttons hidingbuttons" id="getstats">Get Current Game Statistics</button>
+      </div>
 
-
-      <p class="results"></p>
+      <!-- DISPLAY WINS-->
+      <div class="text-center">
       <p class="gamewins"></p>
+      </div>
+
+      <!-- Display Results-->
+      <div class="text-center">
+      <p class="results"></p>
+      </div>
 
       <img src="./assets/styles/images/jedi-yoda.jpg" alt="yoda ready for action">
       <p class="force">May the force be with you</p>
