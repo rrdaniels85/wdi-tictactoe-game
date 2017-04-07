@@ -18,7 +18,7 @@ const signUpFailure = (error) => {
 const signInSuccess = (input) => {
   console.log('signIn sucess ran. data is: ', input)
   store.user = input.user
-   $('#signinmodal').modal('toggle')
+  $('#signinmodal').modal('toggle')
   // reveal the hidden elements on the board
   $('.loginbuttons').removeClass('hidingbuttons')
   $('.initialbuttons').addClass('hidingbuttons')
@@ -31,6 +31,7 @@ const signInFailure = (error) => {
 const signOutSuccess = () => {
   console.log('And nothing was returned')
   store.user = null
+  $('#signoutmodal').modal('toggle')
   // hide game board and associated buttons again
   $('.shownboard').addClass('hidingboard')
   $('.loginbuttons').addClass('hidingbuttons')

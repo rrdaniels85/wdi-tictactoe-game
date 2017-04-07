@@ -31,6 +31,12 @@ img {
   margin: 0 auto;
 }
 
+.loginbuttons {
+  background-color: $gray;
+  color: #000;
+  font-weight: bold;
+}
+
 .modal-title {
   font-size: 25px;
 }
@@ -58,6 +64,13 @@ button {
 
 .hidingboard {
   display: none;
+}
+
+.initialbuttons {
+  margin: 20px;
+  background-color: $gray;
+  color: #000;
+  font-weight: bold;
 }
 
 .hidingbuttons {
