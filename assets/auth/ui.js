@@ -7,6 +7,7 @@ const signUpSuccess = (data) => {
   console.log(data)
   console.log('you signed up buddy')
   // reveal the hidden elements of the board
+  $('#sign-up').find('input:text, input:password, select, textarea').val('');
   $('#signupmodal').modal('toggle')
   $('#signinmodal').modal('toggle')
 }
@@ -18,6 +19,7 @@ const signUpFailure = (error) => {
 const signInSuccess = (input) => {
   console.log('signIn sucess ran. data is: ', input)
   store.user = input.user
+  $('#sign-in').find('input:text, input:password, input:password, select, textarea').val('');
   $('#signinmodal').modal('toggle')
   // reveal the hidden elements on the board
   $('.loginbuttons').removeClass('hidingbuttons')
@@ -45,6 +47,7 @@ const signOutFailure = (error) => {
 
 const changePasswordSuccess = () => {
   console.log('you changed your password!')
+  $('#change-password').find('input:password, select, textarea').val('');
   $('#newpasswordmodal').modal('toggle')
   // store.user = null
 }
