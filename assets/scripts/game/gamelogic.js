@@ -89,13 +89,16 @@ const totalWins = function (gamearray) {
 }
 
 const winCounter = function (data) {
+  let wins = 0
   for (let i = 0; i < data.games.length; i++) {
-     let wins = 0
-     if (totalWins(data.games[i].cells)) {
-       wins ++
-     }
-     return wins
- }
+    console.log(data.games.length + 'this many in array')
+    console.log(data.games[0].cells)
+    if (totalWins(data.games[i].cells)) {
+      wins++
+    }
+    console.log('it got to this point')
+  }
+  return wins
 }
 
 module.exports = {
