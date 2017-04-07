@@ -21,6 +21,7 @@ const signInSuccess = (input) => {
    $('#signinmodal').modal('toggle')
   // reveal the hidden elements on the board
   $('.loginbuttons').removeClass('hidingbuttons')
+  $('.initialbuttons').addClass('hidingbuttons')
 }
 
 const signInFailure = (error) => {
@@ -33,6 +34,7 @@ const signOutSuccess = () => {
   // hide game board and associated buttons again
   $('.shownboard').addClass('hidingboard')
   $('.loginbuttons').addClass('hidingbuttons')
+  $('.initialbuttons').removeClass('hidingbuttons')
 }
 
 const signOutFailure = (error) => {
