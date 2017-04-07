@@ -16,6 +16,13 @@
       <button type="button" class="newgame shownbuttons hidingbuttons">Begin New Game</button>
       <button type="button" class="totalwins shownbuttons hidingbuttons" id="getstats">Game Statistics</button>
 
+    <!-- SIGN OUT button -->
+      <form class="shownbuttons hidingbuttons" form id="sign-out">
+        <fieldset>
+          <input type="submit" name="submit" value="Sign out!" class= "shownbuttons and hidingbuttons">
+        </fieldset>
+      </form>
+
       <!-- SIGN UP modal button -->
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupmodal">
             Sign Up
@@ -65,6 +72,34 @@
               <input name="credentials[email]" type="text" id="sign-in-email" placeholder="Email">
               <input name="credentials[password]" type="password" id="sign-in-password" placeholder="Password">
               <input type="submit" name="submit" value="Sign in!">
+            </fieldset>
+            </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHANGE PASSWORD modal button -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newpasswordmodal">
+            Change Password
+          </button>
+
+      <!-- CHANGE PASSWORD Modal -->
+      <div class="modal fade" id="newpasswordmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">May the force be with you padawan...</h5>
+            </div>
+            <div class="modal-body">
+              <form id="change-password">
+              <fieldset>
+                <input type='password' name='passwords[old]' id ='old-password' placeholder='Old Password'>
+                <input type='password' name='passwords[new]' id ='new-password' placeholder='New Password'>
+                <input type="submit" name="submit" value="Change Password">
             </fieldset>
             </form>
             </div>
@@ -127,20 +162,20 @@
 </fieldset> -->
 <!-- </form> -->
 
-<form id="sign-out shownbuttons hidingbuttons">
+<!-- <form class="shownbuttons hidingbuttons" form id="sign-out">
   <fieldset>
     <input type="submit" name="submit" value="Sign out!" class= "shownbuttons and hidingbuttons">
   </fieldset>
-</form>
-
-<form id="change-password">
+</form> -->
+<!--
+<form class="shownbuttons hidingbuttons" form id="change-password">
   <fieldset>
     <legend>Change Password!</legend>
     <input type='password' name='passwords[old]' id ='old-password' placeholder='Old Password'>
     <input type='password' name='passwords[new]' id ='new-password' placeholder='New Password'>
     <input type="submit" name="submit" value="Change Password">
   </fieldset>
-</form>
+</form> -->
 
   </body>
 </html>

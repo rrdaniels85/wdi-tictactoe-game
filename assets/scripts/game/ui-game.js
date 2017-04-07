@@ -29,7 +29,12 @@ const updateGameFailure = (error) => {
 const getGamesSuccess = (data) => {
   console.log(data)
   let gamesWon = game.winCounter(data)
+  console.log(gamesWon)
+  //if (gamesWon > 0) {
   $('.totalWins').text('You have won ' + gamesWon + ' games! You jedi master!')
+//  } else {
+//  $('.totalWIns').text('You have won 0 games!')
+  //}
 }
 
 const getGamesFailure = (error) => {
