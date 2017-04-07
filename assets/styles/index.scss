@@ -1,24 +1,55 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
+$yellow: #e7c71a;
+$gray: #d0d0e1;
+$starwarsfont: 'Poller One', cursive, sans-serif;
+$otherfont: serif;
+
+
 .square {
-  border: 1px solid #000;
-  height: 100px;
-  width: 100px;
+  border: 1px solid $yellow;
+  height: 150px;
+  width: 150px;
   text-align: center;
+  font-size: 100px;
+}
+
+.starwarslogo {
+  width: 50%;
+  border: 1px solid $yellow;
 }
 
 img {
-  height: 99px;
-  width: 99px;
+  display: block;
+  margin: 0 auto;
+}
+
+.modal {
+  background-color: #000;
+  color: #000;
+  margin: 0 auto;
+}
+
+.modal-title {
+  font-size: 25px;
+}
+
+button {
+  background-color: $gray;
+  color: #000;
 }
 
 .newgame {
   margin: 20px auto;
 }
 
-h1 {
+.title {
   text-align: center;
+  padding: 20px;
+  font-size: 60px;
+  text-decoration: underline;
+  font-family: $starwarsfont;
 }
 
 .container{
@@ -33,6 +64,30 @@ h1 {
   display: none;
 }
 
-#signout {
+.force {
+  font-size: 25px;
+  text-align: center;
+  padding: 15px;
+}
 
+.results {
+  font-size: 20px;
+  text-align: center;
+}
+
+.shownbuttons {
+  background-color: $gray;
+  color: #000;
+  margin: 0 auto;
+}
+
+body {
+  background-image: url('./images/stars.jpg');
+  color: $yellow;
+  font-family: $otherfont;
+  font-weight: bold;
+}
+
+.gamewins {
+  font-size: 20px;
 }

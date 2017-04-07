@@ -10,11 +10,15 @@
       <!-- Do not add `script` tags unless you know what you are doing -->
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+
+      <link href="https://fonts.googleapis.com/css?family=Poller+One" rel="stylesheet">
     </head>
     <body class="container-fluid">
-      <h1>Star Wars Tic Tac Toe</h1>
+      <header>
+      <img class="starwarslogo" src="./assets/styles/images/starwarslogo.jpg" alt="Star Wars Logo">
+      <h1 class="title">Tic Tac Toe</h1>
+    </header>
       <button type="button" class="newgame shownbuttons hidingbuttons">Begin New Game</button>
-      <button type="button" class="totalwins shownbuttons hidingbuttons" id="getstats">Game Statistics</button>
 
     <!-- SIGN OUT button -->
       <form class="shownbuttons hidingbuttons" form id="sign-out">
@@ -24,7 +28,7 @@
       </form>
 
       <!-- SIGN UP modal button -->
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupmodal">
+          <button type="button modalbutton" class="btn btn-primary" data-toggle="modal" data-target="#signupmodal">
             Sign Up
           </button>
 
@@ -54,7 +58,7 @@
           </div>
 
   <!-- SIGN IN modal button -->
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signinmodal">
+      <button type="button modalbutton" class="btn btn-primary" data-toggle="modal" data-target="#signinmodal">
         Sign In
       </button>
 
@@ -68,7 +72,7 @@
             <div class="modal-body">
               <form id="sign-in">
               <fieldset>
-              <legend>Continue Your Training - Sign in!</legend>
+              <legend>Sign in!</legend>
               <input name="credentials[email]" type="text" id="sign-in-email" placeholder="Email">
               <input name="credentials[password]" type="password" id="sign-in-password" placeholder="Password">
               <input type="submit" name="submit" value="Sign in!">
@@ -139,9 +143,15 @@
           <div class="col-xs-3 edge"></div>
         </div>
       </div>
-      <p>May the force be with you</p>
+
+        <button type="button" class="shownbuttons hidingbuttons" id="getstats">Game Statistics</button>
+
+
       <p class="results"></p>
-      <p class="totalWins"></p>
+      <p class="gamewins"></p>
+
+      <img src="./assets/styles/images/jedi-yoda.jpg" alt="yoda ready for action">
+      <p class="force">May the force be with you</p>
 
     <!-- <form id="sign-up">
       <fieldset>

@@ -31,7 +31,7 @@ const getGamesSuccess = (data) => {
   let gamesWon = game.winCounter(data)
   console.log(gamesWon)
   //if (gamesWon > 0) {
-  $('.totalWins').text('You have won ' + gamesWon + ' games! You jedi master!')
+  $('.gamewins').text('You have won ' + gamesWon + ' game(s)! You jedi master!')
 //  } else {
 //  $('.totalWIns').text('You have won 0 games!')
   //}
