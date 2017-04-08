@@ -89,15 +89,20 @@ const totalWins = function (gamearray) {
 }
 
 const winCounter = function (data) {
+  // set win counter to begin at 0
   let wins = 0
+  // run a for loop that checks which of the completed games are wins for player x
   for (let i = 0; i < data.games.length; i++) {
     console.log(data.games.length + 'this many in array')
     console.log(data.games[0].cells)
     if (totalWins(data.games[i].cells)) {
+      // if it is a win - increase the win variable by 1
       wins++
     }
+    // if it is not a win - do nothing
     console.log('it got to this point')
   }
+  // return total wins at the end
   return wins
 }
 
