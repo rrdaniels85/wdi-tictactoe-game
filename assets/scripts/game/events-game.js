@@ -99,8 +99,10 @@ const clickSquare = function (event) {
 }
 
 const getStats = function (event) {
+  // prevent board from refreshing
   event.preventDefault()
   console.log('you clicked this button for stats')
+  // run api call to get the statistics
   api.index()
     .then(ui.getGamesSuccess)
     .catch(ui.getGamesFailure)

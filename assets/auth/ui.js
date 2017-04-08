@@ -39,6 +39,7 @@ const signOutSuccess = () => {
   $('.shownboard').addClass('hidingboard')
   $('.loginbuttons').addClass('hidingbuttons')
   $('.initialbuttons').removeClass('hidingbuttons')
+  $('.results').text('')
 }
 
 const signOutFailure = (error) => {
