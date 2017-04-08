@@ -11,8 +11,13 @@ $otherfont: serif;
   padding-top: 25px;
   border: 3px solid $yellow;
   text-align: center;
-  font-size: 50px;
+  font-size: 100px;
   height: 150px;
+}
+
+.table-responsive {
+  border: none;
+  overflow-y: hidden;
 }
 
 .starwarslogo {
@@ -105,6 +110,7 @@ body {
   color: $yellow;
   font-family: $otherfont;
   font-weight: bold;
+  min-width: 750px;
 }
 
 .gamewins {
