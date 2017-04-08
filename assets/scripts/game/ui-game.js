@@ -10,6 +10,7 @@ const createGameSuccess = (data) => {
   store.game = data.game
   $('.newgame').text('Reset Game')
   $('.shownboard').removeClass('hidingboard')
+  $('.results').text('')
 }
 
 const createGameFailure = (error) => {

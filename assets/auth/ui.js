@@ -24,7 +24,6 @@ const signInSuccess = (input) => {
   // reveal the hidden elements on the board
   $('.loginbuttons').removeClass('hidingbuttons')
   $('.initialbuttons').addClass('hidingbuttons')
-  $('.results').text('')
   $('.newgame').text('Begin New Game')
 }
 
@@ -40,6 +39,7 @@ const signOutSuccess = () => {
   $('.shownboard').addClass('hidingboard')
   $('.loginbuttons').addClass('hidingbuttons')
   $('.initialbuttons').removeClass('hidingbuttons')
+  $('.results').text('')
 }
 
 const signOutFailure = (error) => {
