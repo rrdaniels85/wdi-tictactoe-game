@@ -17,3 +17,21 @@
    authEvents.addHandlers()
    gameEvents.gameHandlers()
  })
+
+ $(() => {
+   $('.initialbuttons').on('click', function () {
+     $('.signinerror').text('')
+     $('.signuperror').text('')
+     $('.passworderror').text('')
+     $('#sign-in').find('input:text, input:password, input:password, select, textarea').val('')
+     $('#sign-up').find('input:text, input:password, input:password, select, textarea').val('')
+     $('#change-password').find('input:text, input:password, input:password, select, textarea').val('')
+   })
+ })
+
+ $(() => {
+   $('#passwordbutton').on('click', function () {
+     $('.passworderror').text('')
+     $('#change-password').find('input:text, input:password, input:password, select, textarea').val('')
+   })
+ })
