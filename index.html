@@ -10,8 +10,8 @@
       <!-- Do not add `script` tags unless you know what you are doing -->
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
-
       <link href="https://fonts.googleapis.com/css?family=Poller+One" rel="stylesheet">
+
     </head>
     <body class="container-fluid">
       <header>
@@ -144,10 +144,12 @@
 
   <!-- NEW GAME BUTTON -->
       <div class="text-center">
-        <button type="button" class="newgame loginbuttons hidingbuttons">Begin New Game</button>
+        <button type="button" class="newgame loginbuttons hidingbuttons">
+          Begin New Game
+        </button>
       </div>
 
-      <!-- Display Results-->
+      <!-- Display Results of Game-->
       <div class="text-center">
       <p class="results"></p>
       </div>
@@ -182,14 +184,14 @@
         </div>
       </div>
 
-      <!-- GAME STATS modal button -->
+      <!-- GET TOTAL WINS modal button -->
         <div class="text-center">
             <button type="button" class="btn btn-primary loginbuttons hidingbuttons" id="getstats" data-toggle="modal" data-target="#gamestatsmodal">
-              Get Current Game Statistics
+              Total Games Won
             </button>
           </div>
 
-      <!-- GAME STATS Modal -->
+      <!-- GET TOTAL WINS Modal -->
       <div class="modal fade" id="gamestatsmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -206,52 +208,8 @@
         </div>
       </div>
 
-<!-- GAME STATS BUTTON-->
-    <!-- <div class="text-center">
-        <button type="button" class="loginbuttons hidingbuttons" id="getstats">Get Current Game Statistics</button>
-      </div> -->
-
-      <!-- DISPLAY WINS-->
-      <!-- <div class="text-center">
-      <p class="gamewins"></p>
-      </div> -->
-
+<!-- Image of Yoda -->
       <img src="https://i.imgur.com/yYudZmg.jpg" alt="yoda ready for action">
       <p class="force">May the force be with you</p>
-
-    <!-- <form id="sign-up">
-      <fieldset>
-      <legend>Join the Jedi Training Academy - Sign up!</legend>
-      <input name="credentials[email]" type="text" id="sign-up-emai" placeholder="Email">
-      <input name="credentials[password]" type="password" id="sign-up-password" placeholder="Password">
-      <input name="credentials[password_confirmation]" type="password" id="sign-up-password-confirmation" placeholder="Confirm Password">
-      <input type="submit" name="submit" value="Sign up!">
-    </fieldset>
-    </form> -->
-
-  <!-- <form id="sign-in">
-  <fieldset>
-  <legend>Continue Your Training - Sign in!</legend>
-  <input name="credentials[email]" type="text" id="sign-in-email" placeholder="Email">
-  <input name="credentials[password]" type="password" id="sign-in-password" placeholder="Password">
-  <input type="submit" name="submit" value="Sign in!">
-</fieldset> -->
-<!-- </form> -->
-
-<!-- <form class="loginbuttons hidingbuttons" form id="sign-out">
-  <fieldset>
-    <input type="submit" name="submit" value="Sign out!" class= "loginbuttons and hidingbuttons">
-  </fieldset>
-</form> -->
-<!--
-<form class="loginbuttons hidingbuttons" form id="change-password">
-  <fieldset>
-    <legend>Change Password!</legend>
-    <input type='password' name='passwords[old]' id ='old-password' placeholder='Old Password'>
-    <input type='password' name='passwords[new]' id ='new-password' placeholder='New Password'>
-    <input type="submit" name="submit" value="Change Password">
-  </fieldset>
-</form> -->
-
   </body>
 </html>
