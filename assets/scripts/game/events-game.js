@@ -28,7 +28,7 @@ const newBoard = function (event) {
 // contact api to create a game
   api.createGame(data)
     .then(ui.createGameSuccess)
-    .catch(ui.createGameFailure)
+  //  .catch(ui.createGameFailure)
 }
 // function to track game play, check for wins and log results
 const clickSquare = function (event) {
@@ -62,8 +62,8 @@ const clickSquare = function (event) {
         }
         // send update request to api for game
         api.updateGame(data)
-          .then(ui.updateGameSuccess)
-          .catch(ui.updateGameFailure)
+          // .then(ui.updateGameSuccess)
+          // .catch(ui.updateGameFailure)
         // update current turn to the next player
         currentTurn = 'o'
         // if player o made selection
@@ -88,8 +88,8 @@ const clickSquare = function (event) {
         }
         // send update request to api for game
         api.updateGame(data)
-          .then(ui.updateGameSuccess)
-          .catch(ui.updateGameFailure)
+          // .then(ui.updateGameSuccess)
+          // .catch(ui.updateGameFailure)
         // update current turn to the next player
         currentTurn = 'x'
       }
@@ -103,7 +103,7 @@ const getStats = function (event) {
   // run api call to get the statistics
   api.index()
     .then(ui.getGamesSuccess)
-    .catch(ui.getGamesFailure)
+  //  .catch(ui.getGamesFailure)
 }
 
 const gameHandlers = () => {
