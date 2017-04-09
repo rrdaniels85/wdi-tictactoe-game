@@ -38,7 +38,6 @@ const clickSquare = function (event) {
   if (over === false) {
     // check to see if the square has already been played
     if ($(this).text()) {
-      console.log('This square has already been played')
     // if square has not been played then check to which player made selection
     } else {
       // if player x made the selection
@@ -101,7 +100,6 @@ const clickSquare = function (event) {
 const getStats = function (event) {
   // prevent board from refreshing
   event.preventDefault()
-  console.log('you clicked this button for stats')
   // run api call to get the statistics
   api.index()
     .then(ui.getGamesSuccess)

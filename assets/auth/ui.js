@@ -5,7 +5,6 @@ const events = require('../scripts/game/events-game')
 
 const signUpSuccess = (data) => {
   console.log(data)
-  console.log('you signed up buddy')
   // reveal the hidden elements of the board
   $('#signupmodal').modal('toggle')
   $('#signinmodal').modal('toggle')
@@ -33,7 +32,6 @@ const signInFailure = (error) => {
 }
 
 const signOutSuccess = () => {
-  console.log('And nothing was returned')
   store.user = null
   $('#signoutmodal').modal('toggle')
   // hide game board and associated buttons again
@@ -47,7 +45,6 @@ const signOutFailure = (error) => {
 }
 
 const changePasswordSuccess = () => {
-  console.log('you changed your password!')
   $('#newpasswordmodal').modal('toggle')
   // store.user = null
 }
