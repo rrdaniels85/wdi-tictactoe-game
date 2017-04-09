@@ -7,7 +7,7 @@ This project is a single page application that allows a user sign up, sign in, a
 Challenge a partner to a fun game of Tic Tac Toe!
 
 ## URL Section
-[Link to Hosted Tic Tac Toe Game] (https://rrdaniels85.github.io/wdi-tictactoe-game/)
+[Link to Hosted Tic Tac Toe Game](https://rrdaniels85.github.io/wdi-tictactoe-game/)
 
 # Dependencies
 
@@ -18,16 +18,16 @@ Install with 'npm install'
 
 # Additional Technologies Used
 
-[imgur] (http://imgur.com/) - For storing images used with my app and storing wireframes.
+[imgur](http://imgur.com/) - For storing images used with my app and storing wireframes.
 
 # Wireframes
 
-[Initial Wireframes](http://imgur.com/a/kPpbs)
-[Updated Wireframes]
+-   [Initial Wireframes](http://imgur.com/a/kPpbs)
+-   [Updated Wireframes]
 
 ## User Stories
 
-[List of User Stories] (https://docs.google.com/document/d/1yhYfxM2QOfAREWLdPOLoN9FjDc9Ps4tP5jKFVTuB2I0/edit?usp=sharing)
+[List of User Stories](https://docs.google.com/document/d/1yhYfxM2QOfAREWLdPOLoN9FjDc9Ps4tP5jKFVTuB2I0/edit?usp=sharing)
 
 ## Development Process & Problem Solving
 
@@ -38,7 +38,6 @@ that the main challenges were filling in the game board, changing turns between 
 and checking for winning scenarios. I made sure to actually draw out all the possible wins in Tic
 Tac Toe on a piece of paper and consider the other options (such as a draw, or a game not yet
 being over). I then wrote and tested the internal logic in a javascript console until I was able to verify that it was working as desired.
-
 
 My next step was to create a basic HTML page with all the required items. This included the header, board, and any required buttons. I applied very little CSS at this point. I did utilize Bootstrap to set up my initial board. With the basic page elements in place, I then used jQuery to set up appropriate event handlers so that the page responded to clicks and user interactions. I experienced some challenges navigating jQuery at first but was much more comfortable with it by the end. I then inserted my game logic and was able to verify that it was working correctly along with the event handlers.
 
@@ -54,10 +53,11 @@ Once I had ensured that all required game functionality was occurring, I then fo
 ## Unsolved Problems
 
 There was additional bonus functionality that I would have liked to have added to the application but was unable to include in this iteration due to time constraints. In the future, I would like to:
--Add custom tokens that the user could select (example: Jedi or Sith figures)
--Create a win counter for the number of games won in a single session
--Allow for players to play each other on multiple devices
 
+-   Add custom tokens that the user could select (example: Jedi or Sith figures)
+-   Create a win counter for the number of games won in a single session
+-   Allow for players to play each other on multiple devices
+-   Make further updates to my UI using bootstrap to create a more sleek user interface
 
 # License
 
