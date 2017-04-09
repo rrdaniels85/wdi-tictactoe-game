@@ -4,7 +4,13 @@
 
 Challenge a partner to a fun game of Tic Tac Toe
 
+
+## URL Section
 [Link to Hosted Tic Tac Toe Game] (https://rrdaniels85.github.io/wdi-tictactoe-game/)
+
+# Technologies Used
+
+[imgur] (http://imgur.com/) - For hosting images used with my app and storing wireframe images.
 
 # Dependencies
 
@@ -13,10 +19,16 @@ Install with 'npm install'
 -   [Bootstrap](http://getbootstrap.com)
 -   [Handlebars.js](http://handlebarsjs.com)
 
+# Wireframes
+
+[Initial Wireframes](http://imgur.com/a/kPpbs)
+
 ## User Stories
 
+[List of User Stories] (https://docs.google.com/document/d/1yhYfxM2QOfAREWLdPOLoN9FjDc9Ps4tP5jKFVTuB2I0/edit?usp=sharing)
 
-## Development Process
+## Development Process & Problem Solving
+
 After completing my initial project planning (wireframes and user stories), I
 began to focus on the development work itself. The first problem that I wanted
 to tackle was the actual internal game logic required for Tic Tac Toe. I felt
@@ -32,6 +44,8 @@ Once I was able to verify that my game was working locally at a basic level, I t
 to the API. I first focused on the authorization events: sign in, sign up, change password, and sign out. Using Ajax, I was able to successfully communicate with the server and get the authorization events working correctly.
 
 At that point, I opened a new folder specifically titled "game" in my repository. I wanted to practice separation of concerns by keeping my authorization files in a separate place from my game action files. This required me to move my code around a bit which took some time to ensure everything was communicating correctly. In retrospect, it would have been better to have started out with the game logic/functionality and authorization events in separate places.
+
+## Unsolved Problems
 
 
 
