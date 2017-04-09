@@ -1,11 +1,8 @@
 'use strict'
 
-//const getFormFields = require(`../../lib/get-form-fields`)
-
 const api = require('./api-game')
 const ui = require('./ui-game')
 const game = require('./gamelogic')
-const store = require('../store')
 
 let currentTurn = 'x'
 let cells = ['', '', '', '', '', '', '', '', '']
