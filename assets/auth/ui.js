@@ -12,7 +12,7 @@ const signUpSuccess = (data) => {
 
 const signUpFailure = (error) => {
   console.error(error)
-  $('.signuperror').text('An error occurred. You may have entered credentials incorrectly. Try again.')
+  $('.signuperror').text('An error occurred. You may have entered invalid credentials. Try again.')
 }
 
 const signInSuccess = (input) => {
@@ -28,7 +28,7 @@ const signInSuccess = (input) => {
 
 const signInFailure = (error) => {
   console.error('signIn failure ran. error is: ', error)
-  $('.signinerror').text('An error occurred. You may have used the incorrect credentials. Try again.')
+  $('.signinerror').text('An error occurred. You may have entered invalid credentials. Try again.')
 }
 
 const signOutSuccess = () => {
@@ -51,7 +51,7 @@ const changePasswordSuccess = () => {
 
 const changePasswordFailure = (error) => {
   console.error('password ran but.... error is: ', error)
-  $('.passworderror').text('An error occurred. You may have entered the incorrect old password. Try again.')
+  $('.passworderror').text('An error occurred. You may have entered the wrong password. Try again.')
 }
 
 module.exports = {
