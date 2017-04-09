@@ -15,15 +15,12 @@ const createGameSuccess = (data) => {
 }
 
 // const createGameFailure = (error) => {
-//  console.error(error)
 // }
 
 // const updateGameSuccess = (data) => {
-  // console.log(data)
 // }
 
 // const updateGameFailure = (error) => {
-  // console.error(error)
 // }
 
 const getGamesSuccess = (data) => {
@@ -34,7 +31,6 @@ const getGamesSuccess = (data) => {
 }
 
 // const getGamesFailure = (error) => {
-  // console.error(error)
 // }
 
 module.exports = {
