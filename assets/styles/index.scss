@@ -5,14 +5,16 @@ $yellow: #e7c71a;
 $gray: #d0d0e1;
 $starwarsfont: 'Poller One', cursive, sans-serif;
 $otherfont: serif;
+$black: #000;
+$red: #c00;
 
 
 .square {
-  padding-top: 25px;
   border: 3px solid $yellow;
-  text-align: center;
   font-size: 100px;
   height: 150px;
+  padding-top: 25px;
+  text-align: center;
 }
 
 .table-responsive {
@@ -21,8 +23,8 @@ $otherfont: serif;
 }
 
 .starwarslogo {
-  width: 50%;
   border: 1px solid $yellow;
+  width: 50%;
 }
 
 img {
@@ -31,16 +33,16 @@ img {
 }
 
 .modal {
-  background-color: #000;
-  color: #000;
+  background-color: $black;
+  color: $black;
   margin: 0 auto;
 }
 
 .loginbuttons {
   background-color: $gray;
-  color: #000;
-  font-weight: bold;
   border-radius: 15px;
+  color: $black;
+  font-weight: bold;
   margin: 5px;
 }
 
@@ -50,7 +52,7 @@ img {
 
 button {
   background-color: $gray;
-  color: #000;
+  color: $black;
 }
 
 .newgame {
@@ -58,13 +60,13 @@ button {
 }
 
 .title {
-  text-align: center;
-  padding: 20px;
-  font-size: 60px;
   font-family: $starwarsfont;
+  font-size: 60px;
+  padding: 20px;
+  text-align: center;
 }
 
-.container{
+.container {
   text-align: center;
 }
 
@@ -72,16 +74,16 @@ button {
   display: none;
 }
 
-.resetgamediv{
+.resetgamediv {
   position: absolute;
 }
 
 .initialbuttons {
-  margin: 5px;
   background-color: $gray;
-  color: #000;
-  font-weight: bold;
   border-radius: 15px;
+  color: $black;
+  font-weight: bold;
+  margin: 5px;
 }
 
 .hidingbuttons {
@@ -90,8 +92,8 @@ button {
 
 .force {
   font-size: 25px;
-  text-align: center;
   padding: 15px;
+  text-align: center;
 }
 
 .results {
@@ -100,7 +102,7 @@ button {
 
 .shownbuttons {
   background-color: $gray;
-  color: #000;
+  color: $black;
   margin: 0 auto;
 }
 
@@ -117,17 +119,17 @@ body {
 }
 
 .signinerror {
-  text-align: left;
-  color: red;
+  color: $red;
   font-size: 15px;
+  text-align: left;
 }
 
 .signuperror {
+  color: $red;
   text-align: left;
-  color: red;
 }
 
 .passworderror {
+  color: $red;
   text-align: left;
-  color: red;
 }
