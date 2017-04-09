@@ -4,19 +4,17 @@ const store = require('../scripts/store')
 const events = require('../scripts/game/events-game')
 
 const signUpSuccess = (data) => {
-  console.log(data)
   // reveal the hidden elements of the board
   $('#signupmodal').modal('toggle')
   $('#signinmodal').modal('toggle')
 }
 
-const signUpFailure = (error) => {
-  console.error(error)
+const signUpFailure = () => {
+  // let user know they made an error signing up
   $('.signuperror').text('An error occurred. You may have entered invalid credentials. Try again.')
 }
 
 const signInSuccess = (input) => {
-  console.log('signIn sucess ran. data is: ', input)
   store.user = input.user
   $('#signinmodal').modal('toggle')
   // reveal the hidden elements on the board
@@ -26,8 +24,8 @@ const signInSuccess = (input) => {
   $('.results').text('')
 }
 
-const signInFailure = (error) => {
-  console.error('signIn failure ran. error is: ', error)
+const signInFailure = () => {
+  // let user know they made an error signing in
   $('.signinerror').text('An error occurred. You may have entered invalid credentials. Try again.')
 }
 
@@ -40,17 +38,11 @@ const signOutSuccess = () => {
   $('.initialbuttons').removeClass('hidingbuttons')
 }
 
-const signOutFailure = (error) => {
-  console.error('signOut failure ran. error is: ', error)
-}
-
 const changePasswordSuccess = () => {
   $('#newpasswordmodal').modal('toggle')
-  // store.user = null
 }
 
-const changePasswordFailure = (error) => {
-  console.error('password ran but.... error is: ', error)
+const changePasswordFailure = () => {
   $('.passworderror').text('An error occurred. You may have entered the wrong password. Try again.')
 }
 
@@ -60,7 +52,6 @@ module.exports = {
   signInSuccess,
   signInFailure,
   signOutSuccess,
-  signOutFailure,
   changePasswordSuccess,
   changePasswordFailure
 }
