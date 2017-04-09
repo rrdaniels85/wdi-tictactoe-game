@@ -24,6 +24,7 @@ const signInSuccess = (input) => {
   $('.loginbuttons').removeClass('hidingbuttons')
   $('.initialbuttons').addClass('hidingbuttons')
   $('.newgame').text('Begin New Game')
+  $('.results').text('')
 }
 
 const signInFailure = (error) => {
