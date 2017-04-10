@@ -4,8 +4,6 @@
 
 This project is a single page application that allows a user to sign up, sign in, and then play a game of tic tac toe against an opponent. It includes additional functionality such as signing out, changing the user's password, creating a new game, and seeing the number of wins that a player has achieved.
 
-Challenge a partner to a fun game of Tic Tac Toe!
-
 ## URL Section
 [Link to Hosted Tic Tac Toe Game](https://rrdaniels85.github.io/wdi-tictactoe-game/)
 
