@@ -2,7 +2,7 @@
 
 # Star Wars Tic Tac Toe Project
 
-This project is a single page application that allows a user sign up, sign in, and then play a game of tic tac toe against an opponent. It includes additional functionality such as signing out, changing the user's password, creating a new game, and seeing the number of wins that a player has achieved.
+This project is a single page application that allows a user to sign up, sign in, and then play a game of tic tac toe against an opponent. It includes additional functionality such as signing out, changing the user's password, creating a new game, and seeing the number of wins that a player has achieved.
 
 Challenge a partner to a fun game of Tic Tac Toe!
 
@@ -18,8 +18,8 @@ Install with 'npm install'
 
 ## Additional Technologies Used
 
-[imgur](http://imgur.com/) - For storing images used with my app and storing wireframes.
-[googledocs](https://www.google.com/docs/about/) - For storing my user stories.
+-   [imgur](http://imgur.com/) - For storing images used with my app and storing wireframes.
+-   [googledocs](https://www.google.com/docs/about/) - For storing my user stories.
 
 ## Wireframes
 
@@ -30,9 +30,9 @@ Install with 'npm install'
 
 [List of User Stories](https://docs.google.com/document/d/1yhYfxM2QOfAREWLdPOLoN9FjDc9Ps4tP5jKFVTuB2I0/edit?usp=sharing)
 
-## Development Process & Problem Solving
+## Planning, Development Process & Problem Solving
 
-After completing my initial project planning (wireframes and user stories), I
+Before I did any actual coding, I first created an initial set of wireframes and user stories detailing exactly what I want my app to do and why. After completing my initial project planning, I
 began to focus on the development work itself. The first problem that I wanted
 to tackle was the actual internal game logic required for Tic Tac Toe. I felt
 that the main challenges were filling in the game board, changing turns between players,
