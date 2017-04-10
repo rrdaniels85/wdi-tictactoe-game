@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Star Wars Tic Tac Toe</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags unless you know what you are doing -->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags unless you know what you are doing -->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+      <link href="https://fonts.googleapis.com/css?family=Poller+One" rel="stylesheet">
+
+    </head>
+    <body class="container-fluid">
+      <header>
+      <img class="starwarslogo" src="https://i.imgur.com/610kGyE.jpg" alt="Star Wars Logo">
+      <h1 class="title">Tic Tac Toe</h1>
+    </header>
+
+      <!-- SIGN UP modal button -->
+        <div class="text-center">
+          <button type="button modalbutton" class="btn btn-primary initialbuttons" data-toggle="modal" data-target="#signupmodal">
+            Sign Up
+          </button>
+        </div>
+
+          <!-- SIGN UP Modal -->
+          <div class="modal fade" id="signupmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">May the force be with you padawan...</h5>
+                </div>
+                <div class="modal-body">
+                  <form id="sign-up">
+                  <fieldset>
+                  <legend>Enroll in the Jedi Academy</legend>
+                  <input name="credentials[email]" type="text" id="sign-up-emai" placeholder="Email">
+                  <input name="credentials[password]" type="password" id="sign-up-password" placeholder="Password">
+                  <input name="credentials[password_confirmation]" type="password" id="sign-up-password-confirmation" placeholder="Confirm Password">
+                  <input type="submit" name="submit" value="Sign up!">
+                </fieldset>
+                </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="signuperror"></div>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+  <!-- SIGN IN modal button -->
+    <div class="text-center">
+      <button type="button modalbutton" class="btn btn-primary initialbuttons" data-toggle="modal" data-target="#signinmodal">
+        Sign In
+      </button>
+    </div>
+
+      <!-- SIGN IN Modal -->
+      <div class="modal fade" id="signinmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Continue Your Jedi Training!</h5>
+            </div>
+            <div class="modal-body">
+              <form id="sign-in">
+              <fieldset>
+              <legend>Sign in!</legend>
+              <input name="credentials[email]" type="text" id="sign-in-email" placeholder="Email">
+              <input name="credentials[password]" type="password" id="sign-in-password" placeholder="Password">
+              <input type="submit" name="submit" value="Sign in!">
+            </fieldset>
+            </form>
+            </div>
+            <div class="modal-footer">
+              <div class="signinerror"></div>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHANGE PASSWORD modal button -->
+        <div class="text-center">
+          <button type="button" class="btn btn-primary loginbuttons hidingbuttons" id="passwordbutton" data-toggle="modal" data-target="#newpasswordmodal">
+            Change Password
+          </button>
+        </div>
+
+      <!-- CHANGE PASSWORD Modal -->
+      <div class="modal fade" id="newpasswordmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Change Your Password</h5>
+            </div>
+            <div class="modal-body">
+              <form id="change-password">
+              <fieldset>
+                <input type='password' name='passwords[old]' id ='old-password' placeholder='Old Password'>
+                <input type='password' name='passwords[new]' id ='new-password' placeholder='New Password'>
+                <input type="submit" name="submit" value="Change Password">
+            </fieldset>
+            </form>
+            </div>
+            <div class="modal-footer">
+              <div class="passworderror"></div>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- SIGN OUT modal button -->
+      <div class="text-center">
+          <button type="button" class="btn btn-primary loginbuttons hidingbuttons" id="signoutmodbutton" data-toggle="modal" data-target="#signoutmodal">
+            Sign Out
+          </button>
+        </div>
+      <!-- SIGN OUT Modal -->
+      <div class="modal fade" id="signoutmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Are you sure you want to leave?</h5>
+            </div>
+            <div class="modal-body">
+              <form id="sign-out">
+                <fieldset>
+                  <input type="submit" name="submit" value="Sign out!">
+                </fieldset>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- NEW GAME BUTTON -->
+      <div class="text-center">
+        <button type="button" class="newgame loginbuttons hidingbuttons">
+          Begin New Game
+        </button>
+      </div>
+
+      <!-- Display Results of Game-->
+      <div class="text-center">
+      <p class="results"></p>
+      </div>
+
+  <!-- GAME BOARD -->
+      <div class="table-responsive container shownboard hidingboard">
+        <!-- Row 1 of game board -->
+        <div class="row">
+          <div class="col-xs-3 edge"></div>
+          <div class="col-xs-2 square" id="0"></div>
+          <div class="col-xs-2 square" id="1"></div>
+          <div class="col-xs-2 square" id="2"></div>
+          <div class="col-xs-3 edge"></div>
+        </div>
+
+        <!-- Row 2 of game board -->
+        <div class="row">
+          <div class="col-xs-3 edge"></div>
+          <div class="col-xs-2 square" id="3"></div>
+          <div class="col-xs-2 square" id="4"></div>
+          <div class="col-xs-2 square" id="5"></div>
+          <div class="col-xs-3 edge"></div>
+        </div>
+
+        <!-- Row 3 of game board -->
+        <div class="row">
+          <div class="col-xs-3 edge"></div>
+          <div class="col-xs-2 square" id="6"></div>
+          <div class="col-xs-2 square" id="7"></div>
+          <div class="col-xs-2 square" id="8"></div>
+          <div class="col-xs-3 edge"></div>
+        </div>
+      </div>
+
+      <!-- GET TOTAL WINS modal button -->
+        <div class="text-center">
+            <button type="button" class="btn btn-primary loginbuttons hidingbuttons" id="getstats" data-toggle="modal" data-target="#gamestatsmodal">
+              Total Games Won
+            </button>
+          </div>
+
+      <!-- GET TOTAL WINS Modal -->
+      <div class="modal fade" id="gamestatsmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Total Wins</h5>
+            </div>
+            <div class="modal-body gamewins">
+                <!-- Win message goes here -->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- Image of Yoda -->
+      <img src="https://i.imgur.com/yYudZmg.jpg" alt="yoda ready for action">
+      <p class="force">May the force be with you</p>
+  </body>
+</html>
